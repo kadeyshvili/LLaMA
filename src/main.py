@@ -45,8 +45,7 @@ if __name__ == '__main__':
 
 
     dataset = load_dataset("ashaba1in/small_openwebtext")
-    # cropped_dataset = dataset['train'].select(range(1))
-    tokenizer = AutoTokenizer.from_pretrained('mistralai/Mistral-7B-v0.1', use_fast=False, token='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')
+    tokenizer = AutoTokenizer.from_pretrained('mistralai/Mistral-7B-v0.1', use_fast=False)
 
     tokenizer.add_eos_token = True
     tokenizer.add_bos_token = True
